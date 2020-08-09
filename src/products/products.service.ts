@@ -12,4 +12,8 @@ export class ProductsService {
 
     return id;
   };
+
+  fetchProducts = (): Array<Product> => {
+    return [...this.products];
+  };
 }
